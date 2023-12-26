@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/marvel" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="layer"></div>
+    <h1>Join Marvel Community</h1>
+    <form onsubmit="return validateForm()">
+        <input type="email" id="email" name="email" required title="Enter a valid email address" placeholder="Email">
+        <br>
+        <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Enter a password with at least one digit, one lowercase letter, one uppercase letter, and 8 or more characters"
+            placeholder="Password">
+
+        <br>
+        <input type="submit" value="Login">
+        <p>Don't have an account? <a href="#">Be a Spidey Fan now!</a></p>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

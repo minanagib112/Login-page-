@@ -1,0 +1,102 @@
+
+/* Set a style for the body element */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+.layer {
+    background-image: url('spider-man.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.layer:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(10px);
+    z-index: 8;
+}
+h1{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    font-family: 'Marvel', sans-serif;
+    font-size: 80px;
+    color: #aa1704;
+    text-shadow: 0 0 10px rgba(242, 242, 242, 0.8);
+    
+}
+/* Set a style for the form element */
+form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+/* Set a style for the label elements */
+
+
+/* Set a style for the input elements */
+input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}   
+
+/* Set a style for the input elements when focused */
+input:focus {
+  border-color: #aa1704;
+  box-shadow: 0 0 5px rgba(170, 23, 4, 0.5);
+  outline: none;
+}
+
+/* Set a style for the submit button */
+input[type=submit] {
+  background-color: #aa1704;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Add a hover effect for the submit button */
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+form p{
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  font-size: 15px;
+}
